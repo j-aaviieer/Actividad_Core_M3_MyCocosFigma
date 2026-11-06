@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MyCOCOS® | Home</title>
+  <link rel="stylesheet" href="static/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Announcement Bar -->
+  <div class="top-bar">
+    <span class="pill">HASTA 50% OFF</span> EN TODA LA TIENDA
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-left">
+      <i class="fa-solid fa-magnifying-glass nav-icon"></i>
+      <a href="carrito.html" class="nav-icon">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <span class="cart-badge" id="cart-count">0</span>
+      </a>
+    </div>
+    <a href="index.html" class="logo">
+      <img src="images/logo.png" alt="MyCocos Logo">
+    </a>
+    <a href="registro.html" class="btn-login">Iniciar Sesión</a>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <div class="rating-tag">★★★★★ +4.500 reseñas | Marca #1 en cuidado masculino</div>
+      <h1>PARA QUEDAR <span>PELIGROSAMENTE SEGURO DE TI MISMO</span></h1>
+      <div class="hero-badge">45% OFF + Envío GRATIS + 2 🎁</div>
+    </div>
+    <div class="hero-image">
+      <img src="images/hero-banner.png" alt="MyCocos Shaver">
+    </div>
+  </section>
+
+  <!-- Featured Grid -->
+  <section class="grid-categories">
+    <div class="card-featured" style="background-image: url('images/banner-shaver.jpg');">
+      <span class="card-tag">LA MÁS VENDIDA</span>
+      <h2 class="card-title">DAILY SHAVER®</h2>
+      <p class="price-tag">$49.990 <del style="font-size: 0.8rem;">$57.990</del></p>
+      <a href="productos.html" class="btn-yellow">DESCÚBRELA</a>
+    </div>
+
+    <div class="side-cards">
+      <div class="card-featured" style="background-color: var(--yellow); color: #000;">
+        <h3 class="card-title">CRACK PACK</h3>
+        <p class="price-tag">$143.990</p>
+        <a href="productos.html" class="btn-yellow" style="background-color: #000; color: #fff;">VER PACK</a>
+      </div>
+      <div class="card-featured" style="background-image: url('images/banner-cuidado.jpg');">
+        <h3 class="card-title">CUIDADO PERSONAL</h3>
+        <a href="productos.html" class="btn-yellow">VER COLECCIÓN</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reseñas -->
+  <section class="reviews-section">
+    <span class="reviews-subtitle">RESEÑAS REALES DE COMPRADORES VERIFICADOS</span>
+    <h2 class="reviews-title">LO QUE DICEN NUESTROS CLIENTES</h2>
+
+    <div class="reviews-grid">
+      <div class="review-card">
+        <img src="images/review-1.jpg" alt="Review 1">
+        <div class="review-author">Jose <i class="fa-solid fa-circle-check" style="color: #00b67a;"></i></div>
+        <div class="stars">★★★★★</div>
+        <strong>Los mejores productos</strong>
+        <p class="review-text">Excelente calidad del producto, satisfacción garantizada...</p>
+      </div>
+      <div class="review-card">
+        <img src="images/review-2.jpg" alt="Review 2">
+        <div class="review-author">Max <i class="fa-solid fa-circle-check" style="color: #00b67a;"></i></div>
+        <div class="stars">★★★★★</div>
+        <strong>Pack completo de buena calidad</strong>
+        <p class="review-text">Muy buena calidad de los productos, se nota la dedicación...</p>
+      </div>
+      <div class="review-card">
+        <img src="images/review-3.jpg" alt="Review 3">
+        <div class="review-author">Cristian <i class="fa-solid fa-circle-check" style="color: #00b67a;"></i></div>
+        <div class="stars">★★★★★</div>
+        <strong>Qué increíble este pack</strong>
+        <p class="review-text">Ahora tengo de todo para cuidarme, gracias MyCOCOS...</p>
+      </div>
+    </div>
+
+    <a href="productos.html" class="btn-yellow" style="padding: 12px 30px;">VER TODOS LOS PRODUCTOS</a>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-column">
+      <h4>FOLLOW US</h4>
+      <div>
+        <i class="fa-brands fa-facebook-f"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-tiktok"></i>
+      </div>
+    </div>
+    <div class="footer-column">
+      <h4>SUSCRÍBETE A LAS OFERTAS VIP</h4>
+      <div class="newsletter-input">
+        <input type="email" placeholder="Su e-mail">
+        <button class="btn-yellow">→</button>
+      </div>
+    </div>
+  </footer>
+
+  <script src="static/js/script.js"></script>
+</body>
+</html>
