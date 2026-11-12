@@ -11,3 +11,29 @@ body{background:var(--paper);color:var(--ink)}
 .eyebrow,.hero h1 em,.page-hero h1 em,.account-form-wrap h1 em,.feature-copy h2 em,.store-callout h2 em,.stars{color:#b99a6b}
 .product-price.missing{color:#9b896c}
 .account-art{background:#171717}
+
+/* Ajustes de identidad y accesibilidad inspirados en la tienda oficial MyCOCOS.
+   No se presentan como una extracción literal del CSS privado de Shopify. */
+:root{--ink:#171717;--paper:#fff;--cream:#f4f4f1;--muted:#707070;--line:#e5e5e2;--white:#fff;--accent:#a6a69f}
+body{background:var(--paper);color:var(--ink)}
+.announcement{background:#171717;color:#fff}
+.site-header{background:#fff;border-bottom-color:#e8e8e5}
+.hero,.page-hero,.site-footer{background:#171717}
+.intro-strip,.feature-banner,.store-callout,.account-layout{background:#f3f3f0}
+.hero h1 em,.page-hero h1 em,.account-form-wrap h1 em,.feature-copy h2 em,.store-callout h2 em,.eyebrow{color:#a6a69f}
+.hero-stamp{background:#fff;color:#171717}
+.stars{color:#555}
+.product-photo{background:#f0f0ed}
+.product-tag,.quick-add{background:#fff;color:#171717}
+.quick-add{border:1px solid #e7e7e3}
+.button-dark,.search-row button{background:#171717;color:#fff}
+.button-dark:hover,.search-row button:hover{background:#383838}
+.product-card{transition:transform .22s ease}
+.product-card:hover{transform:translateY(-3px)}
+.skip-link{position:absolute;left:16px;top:-60px;z-index:100;background:#fff;color:#171717;padding:12px 16px;font-weight:700}
+.skip-link:focus{top:12px}
+:focus-visible{outline:3px solid #777;outline-offset:3px}
+button:disabled{cursor:not-allowed}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
+@media(max-width:900px){.hero{gap:24px}.hero-visual{margin-left:0}.main-nav{gap:22px}}
+@media(max-width:600px){.site-header{position:sticky}.hero-visual{width:100%}.product-photo,.packs-grid .product-photo{height:auto;aspect-ratio:1/1}.cart-summary{padding:22px}.account-art img{object-position:center 35%}}
