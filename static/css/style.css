@@ -39,7 +39,7 @@ button:disabled{cursor:not-allowed}
 @media(max-width:600px){.site-header{position:sticky}.hero-visual{width:100%}.product-photo,.packs-grid .product-photo{height:auto;aspect-ratio:1/1}.cart-summary{padding:22px}.account-art img{object-position:center 35%}}
 
 /* Rediseño de la landing: lenguaje de tienda online, inspirado en la estructura pública de MyCOCOS. */
-:root{--ink:#151515;--paper:#fff;--cream:#f5f5f2;--muted:#666;--line:#e7e7e4;--accent:#d8ed3f}
+:root{--ink:#151515;--paper:#fff;--cream:#f5f5f2;--muted:#666;--line:#e7e7e4;--accent:#c6a15b}
 body{background:#fff;color:#151515}
 .announcement{height:34px;background:#171717;color:#fff;font-size:10px;letter-spacing:.12em;font-weight:700}
 .site-header{height:76px;padding-inline:clamp(20px,5vw,76px);box-shadow:0 2px 12px rgba(0,0,0,.035);border:0}
@@ -47,13 +47,13 @@ body{background:#fff;color:#151515}
 .main-nav{gap:34px}
 .nav-link,.account-link{font-size:12px;font-weight:700;letter-spacing:0}
 .nav-link:after{height:2px;background:#151515}
-.cart-count{background:#d8ed3f;color:#151515;font-weight:800}
+.cart-count{background:#c6a15b;color:#151515;font-weight:800}
 .hero{min-height:570px;background:#f2f2ef;color:#151515;padding:58px clamp(24px,7vw,110px);grid-template-columns:.92fr 1.08fr;gap:42px}
 .hero-copy{max-width:570px}
 .hero .eyebrow,.content-section .eyebrow,.feature-copy .eyebrow,.store-callout .eyebrow{color:#555}
 .hero h1{font-size:clamp(48px,5.7vw,76px);letter-spacing:-.075em;line-height:.98}
 .hero h1 em{color:#151515;position:relative;white-space:nowrap}
-.hero h1 em:after{content:"";position:absolute;left:0;bottom:1px;width:100%;height:9px;background:#d8ed3f;z-index:-1}
+.hero h1 em:after{content:"";position:absolute;left:0;bottom:1px;width:100%;height:9px;background:#c6a15b;z-index:-1}
 .hero-description{color:#555;max-width:430px;font-size:14px;line-height:1.75}
 .button-light{background:#151515;color:#fff}
 .button-light:hover{background:#333}
@@ -61,11 +61,11 @@ body{background:#fff;color:#151515}
 .hero-actions .text-link{color:#151515}
 .hero-visual{height:450px;margin:0;background:#e7e7e3;overflow:hidden}
 .hero-visual>img{filter:none;object-fit:cover}
-.hero-stamp{right:18px;bottom:18px;width:104px;height:104px;background:#d8ed3f;color:#151515;transform:none}
+.hero-stamp{right:18px;bottom:18px;width:104px;height:104px;background:#c6a15b;color:#151515;transform:none}
 .hero-index{left:clamp(24px,7vw,110px);bottom:20px;color:#777}
 .benefits-strip{padding:25px clamp(24px,8vw,120px);display:flex;justify-content:space-between;gap:24px;background:#171717;color:#fff}
 .benefit{display:flex;align-items:center;gap:13px;min-width:0}
-.benefit-icon{width:36px;height:36px;flex:0 0 36px;border:1px solid #555;border-radius:50%;display:grid;place-items:center;color:#d8ed3f;font-size:17px}
+.benefit-icon{width:36px;height:36px;flex:0 0 36px;border:1px solid #555;border-radius:50%;display:grid;place-items:center;color:#c6a15b;font-size:17px}
 .benefit strong,.benefit small{display:block}
 .benefit strong{font-size:11px;letter-spacing:.02em}
 .benefit small{font-size:9px;color:#bbb;margin-top:4px}
@@ -77,7 +77,7 @@ body{background:#fff;color:#151515}
 .product-card{background:#fff;min-width:0}
 .product-photo{height:auto;aspect-ratio:1/1;background:#f3f3f0}
 .product-photo img{object-fit:contain;padding:12px;mix-blend-mode:multiply}
-.product-tag{left:12px;top:12px;background:#d8ed3f;color:#151515;font-size:9px;letter-spacing:.04em;padding:7px 10px}
+.product-tag{left:12px;top:12px;background:#c6a15b;color:#151515;font-size:9px;letter-spacing:.04em;padding:7px 10px}
 .quick-add{right:12px;bottom:12px;width:42px;height:42px;background:#151515;color:#fff;border:0;border-radius:50%;font-size:23px}
 .product-info{padding:14px 2px 18px}
 .product-meta{font-size:9px;color:#777}
@@ -90,7 +90,7 @@ body{background:#fff;color:#151515}
 .feature-copy{padding:60px clamp(28px,6vw,82px)}
 .feature-copy h2{font-size:clamp(37px,4vw,54px);color:#151515}
 .feature-copy h2 em,.store-callout h2 em{color:#151515}
-.feature-copy h2 em:after{content:"";display:block;width:75px;height:7px;background:#d8ed3f;margin-top:8px}
+.feature-copy h2 em:after{content:"";display:block;width:75px;height:7px;background:#c6a15b;margin-top:8px}
 .feature-copy p:not(.eyebrow){color:#555}
 .feature-copy .button-dark{background:#151515}
 .testimonials{background:#fff}
@@ -107,7 +107,7 @@ body{background:#fff;color:#151515}
 .catalog-section{background:#fff}
 .packs-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:32px 20px}
 .packs-grid .product-photo{height:auto;aspect-ratio:1/1}
-.store-callout{background:#d8ed3f;grid-template-columns:.9fr 1.1fr}
+.store-callout{background:#c6a15b;grid-template-columns:.9fr 1.1fr}
 .store-callout h2{color:#151515}
 .store-callout h2 em{color:#151515}
 .store-callout p:not(.eyebrow){color:#343434}
@@ -116,7 +116,7 @@ body{background:#fff;color:#151515}
 .account-layout{background:#f4f4f1}
 .account-art{background:#171717}
 .account-form-wrap h1 em{color:#151515}
-.account-form-wrap h1 em:after{content:"";display:block;width:65px;height:6px;background:#d8ed3f}
+.account-form-wrap h1 em:after{content:"";display:block;width:65px;height:6px;background:#c6a15b}
 .account-form input:not([type=checkbox]){background:#fff;border-color:#deded9}
 .site-footer{background:#151515}
 .footer-bottom{border-color:#414141}
@@ -227,3 +227,34 @@ body{background:#fff;color:var(--mycocos-blue)}
  .main-nav{background:#fff}
  .hero{background:var(--mycocos-blue)}
 }
+
+
+/* Aplicación prioritaria de la identidad MyCOCOS azul + dorado */
+:root{--ink:#173b63!important;--paper:#fff!important;--cream:#eef3f8!important;--muted:#68798b!important;--line:#dce4ec!important;--accent:#c6a15b!important}
+body{background:#fff!important;color:#173b63!important}
+.announcement,.hero,.page-hero{background:#173b63!important;color:#fff!important}
+.site-footer{background:#102d4b!important;color:#fff!important}
+.hero h1 em,.page-hero h1 em{color:#dfc58f!important}
+.hero .eyebrow,.page-hero .eyebrow{color:#dfc58f!important}
+.hero-description,.page-hero p:last-child{color:#e1eaf3!important}
+.hero h1 em:after{background:#c6a15b!important}
+.hero-stamp,.product-tag,.quick-add,.button,.button-light,.button-dark,.search-row button,.search-panel .search-row button{
+ background:#c6a15b!important;color:#102d4b!important;border-color:#c6a15b!important
+}
+.button:hover,.button-light:hover,.button-dark:hover,.quick-add:hover,.search-row button:hover{background:#dfc58f!important;color:#102d4b!important}
+.benefits-strip{background:#102d4b!important;color:#fff!important}
+.benefit-icon{color:#dfc58f!important;border-color:#c6a15b!important}
+.nav-link:after{background:#c6a15b!important}
+.cart-count{background:#c6a15b!important;color:#102d4b!important}
+.section-heading h2,.catalog-toolbar h2,.product-info h3,.cart-summary h2,.cart-title-row h2{color:#173b63!important}
+.product-photo{background:#eef3f8!important}
+.feature-banner,.account-layout{background:#eef3f8!important}
+.feature-copy h2,.store-callout h2,.account-form-wrap h1{color:#173b63!important}
+.feature-copy h2 em,.store-callout h2 em,.account-form-wrap h1 em{color:#9a7638!important}
+.feature-copy h2 em:after,.account-form-wrap h1 em:after{background:#c6a15b!important}
+.store-callout{background:#eaf0f6!important}
+.stars{color:#c6a15b!important}
+.account-art{background:#102d4b!important}
+.account-form input:focus{border-color:#c6a15b!important}
+.toast{background:#102d4b!important;border-left:4px solid #c6a15b!important}
+:focus-visible{outline:3px solid #c6a15b!important;outline-offset:3px}
