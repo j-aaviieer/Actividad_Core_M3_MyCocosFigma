@@ -1,19 +1,20 @@
 # MyCOCOS® — sitio web
 
-Implementación inicial en HTML, CSS y JavaScript vanilla basada en las pantallas identificadas del archivo Figma **MYCOCOS FIGMA CORREGIDO CORE M2**.
+## Estructura
+
+- `index.html`: documento principal.
+- `static/css/style.css`: estilos y variables de color.
+- `static/js/script.js`: navegación, catálogo, carrito y formularios.
+- `static/images/`: recursos gráficos exportados desde Figma.
 
 ## Ejecutar
-Abre `index.html` en un navegador o utiliza la extensión Live Server de Visual Studio Code.
+Abre `index.html` en un navegador o utiliza Live Server en Visual Studio Code.
 
-## Secciones
-- **Inicio:** portada, productos destacados y reseñas.
-- **Packs & Kits:** catálogo con filtro.
-- **Carrito:** añadir, quitar y modificar cantidades; persistencia con localStorage.
-- **Registro / inicio de sesión:** formulario y perfil local de prueba.
-
-## Recursos
-Las fotografías y el logotipo se cargan desde la carpeta `fotosChatGPT/` del repositorio mediante URLs raw de GitHub.
+## Funciones
+- Navegación entre Inicio, Packs & Kits, Carrito y Registro.
+- Filtro y búsqueda de productos.
+- Carrito con cantidades y persistencia en localStorage.
+- Formulario de registro de demostración local.
 
 ## Pendiente para producción
-- Confirmar los precios exactos y descuentos del diseño Figma antes de activar importes y totales.
-- Conectar autenticación real, base de datos, inventario y pasarela de pago. El registro actual es una demostración local en el navegador; no almacena contraseñas ni procesa pagos.
+Conectar autenticación, inventario, precios oficiales, backend y pasarela de pago. El registro actual no es autenticación real y el pago no procesa transacciones.
