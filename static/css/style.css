@@ -190,3 +190,36 @@
   }
   .home-hero .hero-copy .yellow-button{margin-top:4px}
 }
+
+
+/* FOOTER: prevent the payment block from forcing the grid wider than the viewport */
+.site-footer{
+  box-sizing:border-box;
+  width:100%;
+  max-width:100%;
+  min-width:0;
+  grid-template-columns:minmax(0,1fr) minmax(0,1.15fr) minmax(0,140px);
+  column-gap:clamp(10px,2vw,28px);
+  overflow:hidden;
+}
+.site-footer>*{min-width:0;max-width:100%;box-sizing:border-box}
+.social-footer,.newsletter{min-width:0;max-width:100%}
+.social-icons{width:100%;min-width:0;display:flex;flex-wrap:nowrap}
+.social-icons a{flex:1 1 0;min-width:0;box-sizing:border-box}
+.newsletter form{width:100%;min-width:0;max-width:100%}
+.newsletter input{width:0;min-width:0}
+.payments{width:100%;min-width:0;max-width:140px;box-sizing:border-box;justify-content:flex-end;gap:4px}
+.payments b{flex:0 1 auto;min-width:0}
+@media(max-width:650px){
+ .site-footer{
+   width:100%;
+   max-width:100%;
+   grid-template-columns:minmax(0,1fr) minmax(0,1.1fr) minmax(0,75px);
+   column-gap:8px;
+   padding-left:10px;
+   padding-right:10px;
+ }
+ .social-icons a{min-width:0;flex:1 1 0}
+ .payments{max-width:75px;gap:2px}
+ .payments b{font-size:6px;padding:2px}
+}
