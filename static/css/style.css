@@ -134,3 +134,59 @@
     transform:translateY(5px);
   }
 }
+
+
+/* HOME HERO: evitar que la oferta y el texto de regalos queden cortados */
+.home-hero{
+  height:410px;
+  min-height:410px;
+  overflow:visible;
+  padding-top:28px;
+  padding-bottom:28px;
+}
+.home-hero .hero-copy{
+  height:auto;
+  min-height:0;
+  justify-content:center;
+  gap:0;
+  transform:none;
+  position:relative;
+  z-index:2;
+}
+.home-hero .hero-rating{margin:0 0 10px}
+.home-hero h1{margin:0 0 12px;line-height:1.12}
+.home-hero .hero-offer{
+  display:block;
+  margin:0 0 6px;
+  line-height:1.35;
+}
+.home-hero .hero-products{
+  display:block;
+  margin:0 0 8px;
+  line-height:1.4;
+}
+.home-hero .hero-copy .yellow-button{margin-top:4px}
+.home-hero .hero-image{z-index:0;pointer-events:none}
+.home-hero .hero-copy{z-index:1}
+@media(max-width:650px){
+  .home-hero{
+    height:330px;
+    min-height:330px;
+    padding:22px 4% 20px;
+    overflow:visible;
+  }
+  .home-hero .hero-copy{
+    width:54%;
+    height:auto;
+    min-height:0;
+    transform:none;
+  }
+  .home-hero .hero-rating{font-size:6px;margin-bottom:7px}
+  .home-hero h1{font-size:clamp(19px,5vw,27px);line-height:1.12;margin-bottom:9px}
+  .home-hero .hero-offer,.home-hero .hero-products{
+    font-size:7px;
+    line-height:1.35;
+    margin-bottom:5px;
+  }
+  .home-hero .hero-copy .yellow-button{margin-top:4px}
+}
