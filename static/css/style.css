@@ -109,3 +109,28 @@
   .home-hero .hero-offer,.home-hero .hero-products{font-size:7px}
   .home-hero .hero-copy .yellow-button{font-size:8px;padding:8px 10px}
 }
+
+
+/* HOME: despejar el encabezado del hero para que el titular no roce el header */
+.home-hero{
+  height:340px;
+  min-height:340px;
+  padding:44px clamp(24px,5vw,64px) 28px;
+}
+.home-hero .hero-copy{
+  height:auto;
+  min-height:100%;
+  justify-content:center;
+  transform:translateY(8px);
+}
+@media(max-width:650px){
+  .home-hero{
+    height:250px;
+    min-height:250px;
+    padding:24px 4% 16px;
+  }
+  .home-hero .hero-copy{
+    min-height:100%;
+    transform:translateY(5px);
+  }
+}
