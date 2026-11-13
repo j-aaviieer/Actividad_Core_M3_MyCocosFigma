@@ -12,8 +12,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800;900&family=Oswald:wght@500;600;700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="../static/css/style.css?v=20261113-packcards">
-    <script src="../static/js/script.js?v=20261113-final" defer></script>
+    <link rel="stylesheet" href="../static/css/style.css?v=20261113-polish">
+    <script src="../static/js/script.js?v=20261113-polish" defer></script>
 </head>
 
 <body>
@@ -36,8 +36,26 @@
     </header>
     <nav class="mobile-nav" id="mainNav"><a href="../index.html">Inicio</a><a href="../pages/packs.html">Packs &
             Kits</a><a href="../pages/registro.html">Registrarse</a><a href="../pages/carrito.html">Carrito</a></nav>
-    <div class="search-panel" id="searchPanel" hidden><input id="siteSearch" type="search"
-            placeholder="Buscar productos..."><button id="searchGo">BUSCAR</button></div>
+    <div class="search-backdrop" id="searchBackdrop" hidden></div>
+<section class="search-panel" id="searchPanel" aria-label="Buscar productos" hidden>
+  <div class="search-panel-inner">
+    <div class="search-heading"><span class="search-kicker">ENCUENTRA TU FAVORITO</span><button class="search-close" id="searchClose" type="button" aria-label="Cerrar búsqueda">×</button></div>
+    <form class="search-form" id="searchForm" role="search">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 5 5"/></svg>
+      <input id="siteSearch" type="search" placeholder="¿Qué estás buscando hoy?" autocomplete="off" aria-label="Buscar productos">
+      <button id="searchGo" type="submit">BUSCAR <span>→</span></button>
+    </form>
+    <div class="search-suggestions"><span class="suggestion-title">BÚSQUEDAS POPULARES</span>
+      <div class="suggestion-chips">
+        <button type="button" data-search-term="rasuradora">Rasuradoras</button>
+        <button type="button" data-search-term="pack">Packs</button>
+        <button type="button" data-search-term="daily">Daily Shaver</button>
+        <button type="button" data-search-term="jabones">Jabones</button>
+      </div>
+    </div>
+    <p class="search-hint">Presiona Enter para ver los resultados en Packs & Kits.</p>
+  </div>
+</section>
     <main class="page-shell packs-page">
         <section class="packs-banner">
             <div>

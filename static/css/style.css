@@ -239,3 +239,62 @@
   .packs-page .product-grid{grid-template-columns:repeat(2,minmax(0,1fr));column-gap:12px;row-gap:22px}
   .packs-page .product-card{max-width:none}
 }
+
+
+/* EXPERIENCIA DE BÚSQUEDA: panel amplio, sugerencias y microinteracciones */
+.search-backdrop{position:fixed;inset:0;background:rgba(0,10,24,.68);backdrop-filter:blur(5px);z-index:40;opacity:0;animation:fadeIn .22s ease forwards}
+.search-panel{position:fixed;top:calc(var(--search-top, 112px));left:50%;right:auto;width:min(760px,calc(100vw - 36px));transform:translate(-50%,-12px) scale(.985);z-index:41;background:#fff;color:var(--blue);padding:0;border:1px solid rgba(255,186,36,.5);border-radius:22px;box-shadow:0 24px 80px rgba(0,0,0,.34);overflow:hidden;opacity:0;animation:searchEnter .28s cubic-bezier(.2,.8,.2,1) forwards}
+.search-panel-inner{padding:26px 30px 22px}
+.search-heading{display:flex;align-items:center;justify-content:space-between;margin-bottom:16px}
+.search-kicker,.suggestion-title{font-size:10px;font-weight:900;letter-spacing:.16em;color:#748197}
+.search-close{border:0;background:#f1f4f8;color:var(--blue);width:34px;height:34px;border-radius:50%;font-size:24px;line-height:1;transition:background .2s,transform .2s}
+.search-close:hover{background:#ffe7a8;transform:rotate(90deg)}
+.search-form{height:66px;display:flex;align-items:center;gap:14px;padding:7px 8px 7px 18px;border:2px solid #e4e9ef;border-radius:15px;transition:border-color .2s,box-shadow .2s}
+.search-form:focus-within{border-color:var(--gold);box-shadow:0 0 0 4px rgba(255,186,36,.16)}
+.search-form>svg{width:24px;height:24px;flex:0 0 auto;fill:none;stroke:#718096;stroke-width:1.8}
+.search-form input{border:0;outline:0;min-width:0;flex:1;height:100%;color:var(--blue);font-size:17px;font-weight:600;background:transparent}
+.search-form input::placeholder{color:#9aa5b3;font-weight:500}
+.search-form button{height:48px;padding:0 22px;border:0;border-radius:10px;background:var(--gold);color:var(--blue);font-size:11px;font-weight:900;letter-spacing:.04em;transition:transform .2s,background .2s,box-shadow .2s}
+.search-form button span{font-size:17px;margin-left:8px}
+.search-form button:hover{background:#ffc943;transform:translateY(-2px);box-shadow:0 6px 15px #ffba244d}
+.search-suggestions{margin-top:22px}
+.suggestion-title{display:block;margin-bottom:11px}
+.suggestion-chips{display:flex;flex-wrap:wrap;gap:9px}
+.suggestion-chips button{border:1px solid #e1e7ee;background:#f7f9fb;color:#33445b;border-radius:30px;padding:9px 15px;font-size:12px;font-weight:700;transition:all .2s}
+.suggestion-chips button:hover{border-color:var(--gold);background:#fff5d9;color:var(--blue);transform:translateY(-2px)}
+.search-hint{margin:17px 0 0;color:#8b96a5;font-size:11px}
+body.search-open{overflow:hidden}
+@keyframes searchEnter{to{opacity:1;transform:translate(-50%,0) scale(1)}}
+@keyframes fadeIn{to{opacity:1}}
+/* Transiciones coherentes en navegación, tarjetas, botones e imágenes */
+a,button,.product-card,.review-card,.feature-main,.feature-side article,.store-block img,.brand img,.account-link,.header-cart{transition:color .22s ease,background-color .22s ease,border-color .22s ease,box-shadow .25s ease,transform .25s ease,opacity .25s ease}
+.yellow-button,.add-button,.cart-return,.store-block a{transition:transform .22s ease,box-shadow .22s ease,filter .22s ease}
+.yellow-button:hover,.add-button:hover,.cart-return:hover,.store-block a:hover{transform:translateY(-3px);box-shadow:0 9px 20px rgba(0,0,0,.2);filter:brightness(1.04)}
+.product-card{animation:softRise .55s both}
+.product-photo img{transition:transform .45s cubic-bezier(.2,.7,.2,1)}
+.product-card:hover .product-photo img{transform:scale(1.045)}
+.product-card:hover .product-photo{box-shadow:0 12px 28px rgba(0,0,0,.18)}
+.review-card:hover,.feature-main:hover,.feature-side article:hover{transform:translateY(-5px);box-shadow:0 14px 30px rgba(0,0,0,.22)}
+.review-card>img,.feature-main>img,.feature-side article>img{transition:transform .5s ease}
+.review-card:hover>img,.feature-main:hover>img,.feature-side article:hover>img{transform:scale(1.025)}
+.social-icons a:hover{background:var(--gold);color:var(--blue)}
+.mobile-nav a:hover{color:var(--gold);transform:translateX(4px)}
+.site-header .icon-button:hover,.header-cart:hover{transform:scale(1.12);color:#fff}
+.account-link:hover{background:var(--gold);color:var(--blue);transform:translateY(-2px)}
+.sale-switch i{animation:switchPulse 2.8s ease-in-out infinite}
+@keyframes softRise{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+@keyframes switchPulse{50%{transform:translateX(3px)}}
+@media(max-width:650px){
+ .search-panel{top:70px;width:calc(100vw - 22px);border-radius:17px}
+ .search-panel-inner{padding:19px 17px 17px}
+ .search-form{height:56px;gap:9px;padding-left:12px}
+ .search-form input{font-size:14px}
+ .search-form button{height:42px;padding:0 13px;font-size:9px}
+ .search-form button span{margin-left:3px}
+ .search-suggestions{margin-top:17px}
+ .suggestion-chips{gap:7px}
+ .suggestion-chips button{font-size:10px;padding:8px 11px}
+}
+@media(prefers-reduced-motion:reduce){
+ *,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
+}
